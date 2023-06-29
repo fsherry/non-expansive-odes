@@ -1,0 +1,17 @@
+**/*~
+**/*.swp
+results/*
+**/*.png
+**/*.pdf
+**/*.out
+.ipynb_checkpoints/*
+**/__pycache__/*
+classification_results/**/*
+params/**/*
+.mypy_cache/**/*
+.vscode/**/*
+wandb
+scratch
+**/machine.file.*
+**/.ipynb_checkpoints
+*.ipynb
