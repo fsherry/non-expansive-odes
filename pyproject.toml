@@ -9,7 +9,7 @@ license = "GPLv3"
 profile = "black"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.13"
 torch = "^2"
 torchvision = "^0"
 matplotlib = "^3.5.2"
@@ -20,6 +20,7 @@ tqdm = "^4.64.0"
 wandb = "^0.13.4"
 kornia = "^0.6.8"
 foolbox = "^3.3.3"
+scipy = "^1.11.1"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
@@ -28,7 +29,6 @@ flake8 = "^4.0.1"
 ipykernel = "^6.15.0"
 plotille = "^4.0.2"
 pandas = "^1.5.1"
-scikit-learn = "^1.1.3"
 tqdm = "^4.64.1"
 six = "^1.16.0"
 
