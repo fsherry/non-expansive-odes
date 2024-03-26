@@ -23,7 +23,7 @@ foolbox = "^3.3.3"
 scipy = "^1.11.1"
 
 [tool.poetry.dev-dependencies]
-black = "^22.6.0"
+black = "^24.3.0"
 mypy = "^0.961"
 flake8 = "^4.0.1"
 ipykernel = "^6.15.0"
