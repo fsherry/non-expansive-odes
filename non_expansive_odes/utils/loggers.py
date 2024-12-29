@@ -15,7 +15,7 @@ def log_gradient_norms(model: Module, run: Run, step: Optional[int]):
                 [
                     torch.sum(param.grad**2)
                     for param in model.parameters()
-                    if param.grad
+                    if param.grad is not None
                 ]
             ).item()
         },

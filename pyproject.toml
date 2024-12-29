@@ -1,41 +1,25 @@
-[tool.poetry]
-name = "non-expansive-odes"
+[project]
+name = "nonexpansive-odes"
+authors = [
+    {name = "Ferdia Sherry", email = "ferdia@ferdiasherry.com"}
+]
 version = "0.1.0"
-description = ""
-authors = ["Ferdia Sherry <fs436@cam.ac.uk>"]
-license = "GPLv3"
+description = "A software package to accompany the paper ``Designing stable neural networks using convex analysis and ODEs'', Sherry et al., 2024, https://doi.org/10.1016/j.physd.2024.134159."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "foolbox>=3.3.4",
+    "kornia>=0.7.4",
+    "numpy<2",
+    "torch<2.3.0",
+    "torchvision>=0.17.2",
+    "tqdm>=4.67.1",
+    "wandb>=0.19.1",
+]
 
-[tool.isort]
-profile = "black"
-
-[tool.poetry.dependencies]
-python = ">=3.9,<3.13"
-torch = "^2"
-torchvision = "^0"
-matplotlib = "^3.5.2"
-ipykernel = "^6.15.0"
-pytest = "^7.1.2"
-protobuf = "^3.9.2"
-tqdm = "^4.66.3"
-wandb = "^0.13.4"
-kornia = "^0.6.8"
-foolbox = "^3.3.3"
-scipy = "^1.11.1"
-
-[tool.poetry.dev-dependencies]
-black = "^24.3.0"
-mypy = "^0.961"
-flake8 = "^4.0.1"
-ipykernel = "^6.15.0"
-plotille = "^4.0.2"
-pandas = "^1.5.1"
-tqdm = "^4.66.3"
-six = "^1.16.0"
-
-[tool.poetry.group.dev.dependencies]
-pre-commit = "^3.3.3"
-isort = "^5.12.0"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pytest>=8.3.4",
+    "ruff>=0.8.4",
+]
