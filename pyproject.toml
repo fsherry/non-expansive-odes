@@ -3,6 +3,7 @@ name = "nonexpansive-odes"
 authors = [
     {name = "Ferdia Sherry", email = "ferdia@ferdiasherry.com"}
 ]
+license = {text = "GPLv3"}
 version = "0.1.0"
 description = "A software package to accompany the paper ``Designing stable neural networks using convex analysis and ODEs'', Sherry et al., 2024, https://doi.org/10.1016/j.physd.2024.134159."
 readme = "README.md"
